@@ -1,0 +1,97 @@
+import java.util.HashMap;
+import java.util.Iterator;
+
+public class Employee
+{
+	private String firstName;
+	private String lastName;
+	private HashMap salaryRecord = new HashMap();
+
+	
+	public static void main (String Args())
+	{
+		Employee Mohamed = new Employee();
+		Mohamed.firstName = "Mohamed";
+		Mohamed.lastName = "Samy";
+		Mohamed.addEntry("1/1/2015", 100.00);
+		Mohamed.addEntry("2/1/2015", 150.00);
+		Mohamed.addEntry("3/1/2015", 200.00);
+		Mohamed.printPaymentAmount("2/1/2015");
+		Mohamed.printAveragePaycheck();
+		
+	}
+	
+	public Employee()
+	{
+		// TODO Auto-generated constructor stub
+	}
+
+	// methods
+
+	public void addEntry(String date, Double paycheckAmount)
+	{
+		salaryRecord.put(date, paycheckAmount);
+	}
+
+	public void printPaymentAmount(String date)
+	{
+		Double salaryObject = (Double) salaryRecord.get(date);
+
+		if (salaryObject != null)
+		{
+			System.out.println("The salary for " + firstName + " " + lastName
+					+ " is " + salaryObject);
+		} else
+		{
+			System.out.println(firstName + " " + lastName
+					+ " was not paid a salary on " + date);
+		}
+
+	}
+
+	public void printAveragePaycheck()
+	{
+		Iterator it = salaryRecord.keySet().iterator();
+		Double sum = 0.0;
+		int count = 0;
+		// salaryRecord.
+		while (it.hasNext())
+		{
+			String nextDate = (String) it.next();
+			sum += (Double) salaryRecord.get(nextDate);
+			count++;
+		}
+
+		System.out.println("The average salary of " + firstName + " "
+				+ lastName + " is " + sum / count);
+	}
+
+	// properties
+	/**
+	 * @return the firstName
+	 */
+	public String getFirstName()
+	{
+		return firstName;
+	}
+
+	/**
+	 * @param firstName
+	 *            the firstName to set
+	 */
+	public void setFirstName(String firstName)
+	{
+		this.firstName = firstName;
+	}
+
+	public String getLastName()
+	{
+		return lastName;
+	}
+
+	public void setLastName(String lastName)
+	{
+		this.lastName = lastName;
+	}
+
+}

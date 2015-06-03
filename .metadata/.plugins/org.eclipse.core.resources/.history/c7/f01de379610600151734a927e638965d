@@ -1,0 +1,91 @@
+/**
+ * 
+ */
+
+/**
+ * @author mohamed
+ *
+ */
+public class MyStringList
+{
+	int firstFreeValue = 0;
+	private String[] strArray = new String[5];
+
+	/**
+	 * 
+	 */
+	public MyStringList()
+	{
+		// TODO Auto-generated constructor stub
+	}
+
+	/**
+	 * @param args
+	 */
+	public static void main(String[] args)
+	{
+		MyStringList ML = new MyStringList();
+		ML.add("1");
+		ML.add("2");
+		ML.add("3");
+		ML.add("4");
+		ML.add("5");
+		ML.add("6");
+		ML.add("7");
+		ML.add("8");
+		ML.add("9");
+
+		System.out.println(ML.find("8"));
+		System.out.println(ML.get(7));
+
+		// TODO Auto-generated method stub
+
+	}
+
+	public void add(String s)
+	{
+		if (firstFreeValue > strArray.length - 1)
+		{
+			resize();
+		}
+		strArray[firstFreeValue] = s;
+		firstFreeValue++;
+	}
+
+	public String get(int i)
+	{
+		if (i > strArray.length - 1 || strArray[i] == null)
+		{
+			return null;
+		}
+		return strArray[i];
+	}
+
+	public boolean find(String s)
+	{
+		for (int i = 0; i < strArray.length; i++)
+		{
+			if (strArray[i] == s)
+			{
+				return true;
+			}
+		}
+		return false;
+	}
+
+	private void resize()
+	{
+		String[] newArr = new String[strArray.length * 2];
+		if (strArray[strArray.length - 1] != null)
+		{
+			for (int x = 0; x < strArray.length; x++)
+			{
+				// copy old array to new array
+				newArr[x] = strArray[x];
+			}
+
+			strArray = newArr;
+		}
+	}
+
+}

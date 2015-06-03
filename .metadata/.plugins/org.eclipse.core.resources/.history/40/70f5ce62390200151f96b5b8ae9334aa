@@ -1,0 +1,41 @@
+public class Factorial
+{
+
+	public static void main(String[] Args)
+	{
+		System.out
+				.print("The factorial of 5 is " + factorial_recursive(5) + "");
+	}
+
+	public static int factorial_recursive(int number)
+	{
+		int retval;
+		if (number == 0)
+		{
+			return 1;
+		}
+		else 
+		{
+			if (number < 0 )
+			{
+				return -1;
+			}
+			else
+			{
+			  
+				retval = number * factorial_recursive(number -1)
+				
+			}
+			
+			
+		}
+		
+		return retval;
+	}
+
+	// constructor
+	public Factorial()
+	{
+
+	}
+}

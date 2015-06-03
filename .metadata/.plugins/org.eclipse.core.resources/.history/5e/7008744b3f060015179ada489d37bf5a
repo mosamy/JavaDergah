@@ -1,0 +1,60 @@
+import java.util.HashMap;
+
+public class Employee
+{
+	private String firstName;
+	private String lastName;
+	private HashMap salaryRecord = new HashMap();
+
+	public Employee()
+	{
+		// TODO Auto-generated constructor stub
+	}
+
+	// methods
+
+	public void addEntry(String date, double paycheckAmount)
+	{
+		salaryRecord.put(date, paycheckAmount);
+	}
+
+	public void printPaymentAmount(String date)
+	{
+	  Double salaryObject = (Double)salaryRecord.get(date);
+	  
+	}
+
+	public void printAveragePaycheck()
+	{
+
+	}
+
+	// properties
+	/**
+	 * @return the firstName
+	 */
+	public String getFirstName()
+	{
+		return firstName;
+	}
+
+	/**
+	 * @param firstName
+	 *            the firstName to set
+	 */
+	public void setFirstName(String firstName)
+	{
+		this.firstName = firstName;
+	}
+
+	public String getLastName()
+	{
+		return lastName;
+	}
+
+	public void setLastName(String lastName)
+	{
+		this.lastName = lastName;
+	}
+
+}

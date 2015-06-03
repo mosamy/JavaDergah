@@ -1,0 +1,58 @@
+public class Factorial
+{
+
+	public static void main(String[] Args)
+	{
+		System.out.println("The factorial of 100 is " + factorial_recursive(89)
+				+ "");
+		// System.out.println("The factorial of 100 is "
+		// + factorial_iterative(100) + "");
+	}
+
+	// facorial recursive
+	public static int factorial_recursive(int number)
+	{
+		int retval;
+		if (number == 0)
+		{
+			return 1;
+		} else
+		{
+
+			retval = number * factorial_recursive(number - 1);
+
+		}
+
+		return retval;
+	}
+
+	public static int factorial_iterative(int number)
+	{
+		int retval = 1;
+		if (number == 0)
+		{
+			return 1;
+		} else
+		{
+			if (number < 0)
+			{
+				return 0;
+			} else
+			{
+				for (int x = number; x > 0; x--)
+				{
+					retval = retval * number;
+				}
+
+			}
+
+			return retval;
+		}
+	}
+
+	// constructor1
+	public Factorial()
+	{
+
+	}
+}

@@ -1,0 +1,28 @@
+import static org.junit.Assert.*;
+
+import org.junit.Test;
+
+
+public class EmployeeTest
+{
+
+	@Test
+	public void testPrintPaymentAmount()
+	{
+		
+		fail("Not yet implemented");
+	}
+
+	@Test
+	public void testPrintAveragePaycheck()
+	{
+		fail("Not yet implemented");
+	}
+
+	@Test
+	public void testCompareTo()
+	{
+		fail("Not yet implemented");
+	}
+
+}

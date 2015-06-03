@@ -1,0 +1,169 @@
+/**
+ * 
+ */
+
+/**
+ * @author mohamed
+ *
+ */
+import java.util.Random;
+public class RandomGenerator {
+
+	/**
+	 * @param args
+	 */
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		int[] anArray = new int[10];
+		Random randomGenerator = new Random();
+		for(int x = 0; x <10 ; x++)
+		{
+		int randInt = randomGenerator.nextInt(100);
+		anArray[x] = randInt;
+		
+		}
+		
+		System.out.println("Unsorted Array");
+		for(int x = 0; x <10 ; x++)
+		{
+			System.out.println(anArray[x]);
+		}
+		
+		System.out.println("Sorted Array");
+		//int[] bubblesorted = bubbleSort(anArray);
+		int[] quicksorted = quickSort(anArray);
+		for(int x = 0; x <10 ; x++)
+		{
+			System.out.println(quicksorted[x]);
+		}
+	}
+	
+	
+	//sort values ascending
+	public static int[] bubbleSort(int[] unsorted){
+		int temp;
+		Boolean swap = true;
+		int x = 0;
+		while (swap == true) 
+		{
+			x ++;
+			
+			swap = false;
+			System.out.println("Pass " + x);
+			for (int i = 0; i < unsorted.length -1 ; i ++ )
+			{
+				
+				
+				if (unsorted[i] >  unsorted[i+1])
+				{
+					 temp = unsorted[i];
+					 unsorted[i] = unsorted[i+1];
+					 unsorted[i+1] = temp;
+					 swap = true;
+				}
+				
+				
+				
+			}
+			
+			for(int z = 0; z <10 ; z++)
+			{
+				System.out.println(unsorted[z]);
+			}
+			
+						
+		}
+		
+		return unsorted;
+		
+	}
+
+	public static int[] quickSort(int[] unsorted)
+	{
+		 int pivotindex;
+		 int pivotvalue;
+		 int leftcursor;
+		 int rightcursor;
+		 
+		 //get pivot
+		 pivotindex = unsorted.length /2 ;
+		 pivotvalue = unsorted[pivotindex];
+		 
+		 //left pointer
+		 for(int i = 0; i < pivotindex; i ++)
+		 {
+			 if (unsorted[i] < pivotvalue)
+			 {
+				 i++;
+			 }
+			 else
+			 {
+				 break;
+			 }
+		 }
+		 
+		 //right pointer
+		 for(int i = unsorted.length -1; i > pivotindex; i ++)
+		 {
+			 if (unsorted[i] > pivotvalue)
+			 {
+				 i--;
+			 }
+			 else
+			 {
+				 break;
+			 }
+		 }
+		 
+		 //leftloop
+		 
+		return unsorted; 
+	}
+
+	public static void printarray(int[] array)
+	{
+		
+		for(int x = 0; x < array.length  ; x++)
+		{
+			System.out.println(array[x]);
+		}
+	}
+
+	public static void swap (int int1, int int2)
+	{
+		int temp = int1;
+		int1 = int2;
+		int2 = temp;
+				
+	}
+    
+	
+	// This is where all the action happens. The swaping, the index movement
+	public static int partition(int[] array, int startindex, int endindex)
+	{
+		int length = array.length;
+		int pivotvalue = array[startindex];
+   		
+		//left pointer
+		int left = startindex + 1;
+		
+		//right pointer
+		int right = endindex;
+		
+		boolean IsDone = false;
+		
+		while (!IsDone)
+		{
+			//move left cursor right
+			
+			
+			//move right cursor left
+			
+			 while left <= right and my_list[left] <= pivot:
+		            left = left + 1
+		        while my_list[right] >= pivot and right >= left:
+		            right = right - 1
+		}
+	}
+
+}

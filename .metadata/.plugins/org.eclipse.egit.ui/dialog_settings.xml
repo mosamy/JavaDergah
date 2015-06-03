@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<section name="Workbench">
+	<item value="698" key="DIALOG_WIDTH"/>
+	<item value="17" key="DIALOG_Y_ORIGIN"/>
+	<item value="0" key="org.eclipse.egit.ui.internal.clone.GitSelectWizardPageWizardSel"/>
+	<item value="533" key="DIALOG_HEIGHT"/>
+	<item value="335" key="DIALOG_X_ORIGIN"/>
+	<item value="1|Sans|10.0|0|GTK|1|" key="DIALOG_FONT_NAME"/>
+	<list key="RepositorySelectionPage.UsedUris">
+		<item value="https://https://github.com/mosamy/JavaDergah.git/https://github.com/mosamy/JavaDergah.git"/>
+	</list>
+	<section name="GitImportWizard">
+	</section>
+	<section name="org.eclipse.egit.ui.COMMIT_DIALOG_SECTION">
+		<item value="628" key="DIALOG_WIDTH"/>
+		<item value="0" key="DIALOG_Y_ORIGIN"/>
+		<item value="370" key="DIALOG_X_ORIGIN"/>
+		<item value="633" key="DIALOG_HEIGHT"/>
+		<item value="1|Sans|10.0|0|GTK|1|" key="DIALOG_FONT_NAME"/>
+	</section>
+</section>

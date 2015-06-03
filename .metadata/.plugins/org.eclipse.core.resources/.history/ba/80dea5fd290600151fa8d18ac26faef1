@@ -1,0 +1,14 @@
+import java.util.HashMap;
+
+public class Employee
+{
+	private String firstName;
+	private String lastName;
+	private HashMap salaryRecord;
+
+	public Employee()
+	{
+		// TODO Auto-generated constructor stub
+	}
+
+}

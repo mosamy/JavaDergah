@@ -1,0 +1,30 @@
+public class Link
+{
+	/*
+	 * This is where we define the link and this is where we define the next and
+	 * prev node obviously first node prev = null last node next = null
+	 */
+
+	private Link next;
+	private Link prev;
+	public String BookName;
+	public String MillionCopies;
+	
+	/*
+	 * this is the default constructor
+	 */
+	public Link()
+	{
+		// TODO Auto-generated constructor stub
+	}
+
+	/*
+	 * This is the constructor defined with parameters
+	 */
+
+	public Link(String bookname, String millionsofcopies)
+	{
+		
+	}
+
+}

@@ -1,0 +1,19 @@
+import java.util.ArrayList;
+import java.util.List;
+
+public class EmployeeInfo
+{
+	private List<Employee> emp = new ArrayList<Employee>();
+
+	public EmployeeInfo()
+	{
+		// TODO Auto-generated constructor stub
+	}
+
+	public static void main(String[] args)
+	{
+		// TODO Auto-generated method stub
+
+	}
+
+}

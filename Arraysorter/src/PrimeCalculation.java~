@@ -1,0 +1,33 @@
+public class PrimeCalculation
+{
+
+	public static void isPrime(int n)
+	{
+		int SQRT = (int) Math.sqrt(n) + 1;
+		// 2 is is prime
+		if (num == 2 || number == 3)
+			return true;
+
+		// not divisable by 2
+		if (n % 2 == 0)
+		{
+			return false;
+		}
+
+		for (int x = 3; x < SQRT; x += 2)// no evens
+		{
+			if (n % x == 0)
+			{
+				return false;
+			}
+		}
+
+		return true;
+
+	}
+
+	public static void main(String[] Args)
+	{
+
+	}
+}

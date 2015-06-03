@@ -1,0 +1,61 @@
+/**
+ * 
+ */
+
+/**
+ * @author mohamed samy
+ *
+ */
+public class DoublyLinkedList
+{
+	
+	private Link firstLink;
+
+	
+	/**
+	 * constructor
+	 */
+	public DoublyLinkedList()
+	{
+		// TODO Auto-generated constructor stub
+	}
+
+	/**
+	 * @param args
+	 */
+	public static void main(String[] args)
+	{
+		// TODO Auto-generated method stub
+
+	}
+
+	/*
+	 * no method should return nothing
+	 * */ 
+	public boolean AddLink(Link link)
+	{
+		try
+		{
+		link.setNext(firstLink);
+		link.setPrev(null);
+        firstLink.setPrev(link);
+        this.firstLink = link;
+        return true;
+		}
+		catch (Exception ex)
+		{
+			return false;
+		}
+	}
+	
+
+	public boolean Display()
+	{
+		Link startLink = firstLink;
+		while(startLink.getNext() != null)
+		{
+			
+		}
+	}
+	
+}
