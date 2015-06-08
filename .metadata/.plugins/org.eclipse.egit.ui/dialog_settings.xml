@@ -3,19 +3,36 @@
 	<item value="698" key="DIALOG_WIDTH"/>
 	<item value="17" key="DIALOG_Y_ORIGIN"/>
 	<item value="0" key="org.eclipse.egit.ui.internal.clone.GitSelectWizardPageWizardSel"/>
-	<item value="533" key="DIALOG_HEIGHT"/>
 	<item value="335" key="DIALOG_X_ORIGIN"/>
+	<item value="533" key="DIALOG_HEIGHT"/>
 	<item value="1|Sans|10.0|0|GTK|1|" key="DIALOG_FONT_NAME"/>
+	<item value="true" key="CommitDialog.showUntracked"/>
+	<list key="CommitDialog.authorValues">
+		<item value="mohamed &lt;mohamed@debian.Lefke&gt;"/>
+	</list>
+	<list key="CommitDialog.committerValues">
+		<item value="mohamed &lt;mohamed@debian.Lefke&gt;"/>
+	</list>
 	<list key="RepositorySelectionPage.UsedUris">
+		<item value="https://github.com/mosamy/JavaDergah.git"/>
 		<item value="https://https://github.com/mosamy/JavaDergah.git/https://github.com/mosamy/JavaDergah.git"/>
 	</list>
 	<section name="GitImportWizard">
 	</section>
+	<section name="GitCommitMessageComponent">
+	</section>
 	<section name="org.eclipse.egit.ui.COMMIT_DIALOG_SECTION">
 		<item value="628" key="DIALOG_WIDTH"/>
-		<item value="0" key="DIALOG_Y_ORIGIN"/>
-		<item value="370" key="DIALOG_X_ORIGIN"/>
+		<item value="42" key="DIALOG_Y_ORIGIN"/>
 		<item value="633" key="DIALOG_HEIGHT"/>
+		<item value="438" key="DIALOG_X_ORIGIN"/>
+		<item value="1|Sans|10.0|0|GTK|1|" key="DIALOG_FONT_NAME"/>
+	</section>
+	<section name="org.eclipse.egit.ui.internal.push.PushResultDialog.dialogBounds">
+		<item value="654" key="DIALOG_WIDTH"/>
+		<item value="70" key="DIALOG_Y_ORIGIN"/>
+		<item value="452" key="DIALOG_HEIGHT"/>
+		<item value="358" key="DIALOG_X_ORIGIN"/>
 		<item value="1|Sans|10.0|0|GTK|1|" key="DIALOG_FONT_NAME"/>
 	</section>
 </section>

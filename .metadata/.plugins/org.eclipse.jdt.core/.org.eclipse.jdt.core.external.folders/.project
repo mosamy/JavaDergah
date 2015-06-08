@@ -10,9 +10,9 @@
 	</natures>
 	<linkedResources>
 		<link>
-			<name>.link0</name>
+			<name>.link2</name>
 			<type>2</type>
-			<location>/home/mohamed/Downloads/jdk1.8.0_45</location>
+			<location>/home/mohamed/Downloads/jdk1.8.0_45/jre/lib/applet</location>
 		</link>
 	</linkedResources>
 </projectDescription>
