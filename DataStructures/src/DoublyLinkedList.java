@@ -21,6 +21,3 @@ public class DoublyLinkedList
 
 }
 
-public class node
-{
-}
