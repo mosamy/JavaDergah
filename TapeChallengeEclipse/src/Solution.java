@@ -73,23 +73,29 @@ class Solution
         if(isFirstTime)
         {
 
+        	totalArray = 0;
        	 for (int x = 0; x < A.length; x++)
             {
             	if (x <= P-1)
             	{
-                totalBefore+= A[x];
+            		totalBefore+= A[x];
             	}
             	else
             	{
             		totalAfter+= A[x];
             	}
+            	
+            	
             		
             }
+       	totalArray += totalBefore;
+       	totalArray += totalAfter;
+       	 isFirstTime = false;
         }
         else
         {
         	
-        	for (int x = 0; x < P-1 ; x++)
+        	for (int x = 0; x <= P-1 ; x++)
             {
             	
                 totalBefore+= A[x];
@@ -103,11 +109,7 @@ class Solution
        
 
         
-        if (totalArray == Long.MIN_VALUE)
-        {
-        	totalArray = (long) (totalBefore + totalAfter);
-        	isFirstTime = false;
-        }
+       
         return  Math.abs(totalBefore - totalAfter);
     }
 }
